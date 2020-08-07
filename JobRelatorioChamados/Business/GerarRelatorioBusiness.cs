@@ -191,6 +191,7 @@ namespace JobRelatorioChamados.Business
                             tabelaRelatorio.DataViolacao = null;
 
                         tabelaRelatorio.Observacao = relatorio.Observacoes;
+                        tabelaRelatorio.Acoes = relatorio.Acoes;
                         listaTabela.Add(tabelaRelatorio);
                     }
                     ws.Cell(1, 11).SetValue<int>(diaSemana);
@@ -249,6 +250,7 @@ namespace JobRelatorioChamados.Business
                                 tabelaRelatorio.DataViolacao = null;
 
                             tabelaRelatorio.Observacao = relatorio.Observacoes;
+                            tabelaRelatorio.Acoes = relatorio.Acoes;
                             relatorioPorto.Add(tabelaRelatorio);
 
                             ws.Cell(1, 11).SetValue<int>(diaSemana);
