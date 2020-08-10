@@ -141,6 +141,10 @@ namespace JobRelatorioChamados.Business
                           </td>
                           <td nowrap
                               style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 3.5pt 0cm 3.5pt'>
+                              <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>Sub-Status<o:p></o:p></span></p>
+                          </td>
+                          <td nowrap
+                              style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 3.5pt 0cm 3.5pt'>
                               <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>Título<o:p></o:p></span></p>
                           </td>
                           <td nowrap
@@ -198,6 +202,10 @@ namespace JobRelatorioChamados.Business
                           <td nowrap
                               style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 3.5pt 0cm 3.5pt'>
                               <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>Status<o:p></o:p></span></p>
+                          </td>
+                          <td nowrap
+                              style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 3.5pt 0cm 3.5pt'>
+                              <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>Sub-Status<o:p></o:p></span></p>
                           </td>
                           <td nowrap
                               style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 3.5pt 0cm 3.5pt'>
@@ -272,12 +280,17 @@ namespace JobRelatorioChamados.Business
                                   </td>
                                   <td 
                                       style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt'>
-                                      <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>"+registro.Status+@"<o:p></o:p>
+                                      <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>"+registro.Status+ @"<o:p></o:p>
                                               </span></p>
                                   </td>
                                   <td 
                                       style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt'>
-                                      <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>"+registro.Titulo+@"<o:p>
+                                      <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>" + registro.SubStatus + @"<o:p></o:p>
+                                              </span></p>
+                                  </td>
+                                  <td 
+                                      style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt'>
+                                      <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>" + registro.Titulo+@"<o:p>
                                               </o:p></span></p>
                                   </td>
                                   <td 
@@ -327,6 +340,11 @@ namespace JobRelatorioChamados.Business
                                   <td 
                                       style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt'>
                                       <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>" + registro.Status + @"<o:p></o:p>
+                                              </span></p>
+                                  </td>
+                                  <td 
+                                      style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt'>
+                                      <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>" + registro.SubStatus + @"<o:p></o:p>
                                               </span></p>
                                   </td>
                                   <td 

@@ -172,6 +172,7 @@ namespace JobRelatorioChamados.Business
                         tabelaRelatorio.Cliente = "BrasilSeg";
                         tabelaRelatorio.Id = relatorio.Id;
                         tabelaRelatorio.Status = relatorio.Status;
+                        tabelaRelatorio.SubStatus = relatorio.SubStatus;
                         tabelaRelatorio.Titulo = relatorio.Titulo;
                         tabelaRelatorio.Prioridade = relatorio.Prioridade;
                         tabelaRelatorio.DataAbertura = Convert.ToDateTime(relatorio.Abertura);
@@ -231,6 +232,7 @@ namespace JobRelatorioChamados.Business
                             tabelaRelatorio.Cliente = "Porto";
                             tabelaRelatorio.Id = relatorio.Id;
                             tabelaRelatorio.Status = relatorio.Status;
+                            tabelaRelatorio.SubStatus = relatorio.SubStatus;
                             tabelaRelatorio.Titulo = relatorio.Titulo;
                             tabelaRelatorio.Prioridade = relatorio.Prioridade;
                             tabelaRelatorio.DataAbertura = Convert.ToDateTime(relatorio.Abertura);
