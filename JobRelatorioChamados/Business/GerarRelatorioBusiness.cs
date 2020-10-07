@@ -155,7 +155,7 @@ namespace JobRelatorioChamados.Business
                 var listaTabela = new List<TabelaChamadosViewModel>();
                 var diaSemana = Convert.ToInt32(DateTime.Today.DayOfWeek);
 
-                using (var workbook = new XLWorkbook(@"\\confitecsp12\usuarios\caio.silva\Inspeções mesmo dia.xlsx"))
+                using (var workbook = new XLWorkbook(@"\\confitecsp12\usuarios\Guilherme.Santos\Inspeções mesmo dia.xlsx"))
                 {
                     var ws = workbook.Worksheet("Planilha1");
                     
