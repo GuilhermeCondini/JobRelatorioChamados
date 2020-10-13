@@ -18,6 +18,7 @@ namespace JobRelatorioChamados.Models
         public DateTime? DataViolacao { get; set; }
         public string Observacao { get; set; }
         public string Acoes { get; set; }
+        public string Categoria { get; set; }
         public string Cliente { get; set; }
     }
 }

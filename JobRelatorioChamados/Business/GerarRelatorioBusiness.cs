@@ -17,7 +17,7 @@ namespace JobRelatorioChamados.Business
             {
                 var resultBrasilSeg = new List<TabelaChamadosViewModel>();
 
-                var diretorio = new DirectoryInfo(@"C:\Users\guilherme.santos\Downloads");
+                var diretorio = new DirectoryInfo(@"C:\Users\willian.silva\Downloads");
                 var arquivos = diretorio.GetFiles().Where(x => x.FullName.EndsWith(".csv")).OrderByDescending(f => f.LastWriteTime).First();
                 var reader = File.ReadAllLines(arquivos.FullName);
 
@@ -62,7 +62,7 @@ namespace JobRelatorioChamados.Business
         {
             try
             {
-                var diretorio = new DirectoryInfo(@"C:\Users\guilherme.santos\Downloads");
+                var diretorio = new DirectoryInfo(@"C:\Users\willian.silva\Downloads");
                 var arquivo = diretorio.GetFiles().Where(x => x.FullName.EndsWith(".xls")).OrderByDescending(f => f.LastWriteTime).First();
                 var reader = File.ReadAllLines(arquivo.FullName).Where(x => x.Contains("<Data ss"));
                 var tabelaPorto = new TabelaChamadosViewModel();
@@ -155,7 +155,7 @@ namespace JobRelatorioChamados.Business
                 var listaTabela = new List<TabelaChamadosViewModel>();
                 var diaSemana = Convert.ToInt32(DateTime.Today.DayOfWeek);
 
-                using (var workbook = new XLWorkbook(@"\\confitecsp12\usuarios\caio.silva\Inspeções mesmo dia.xlsx"))
+                using (var workbook = new XLWorkbook(@"\\confitecsp12\usuarios\Guilherme.Santos\Inspeções mesmo dia.xlsx"))
                 {
                     var ws = workbook.Worksheet("Planilha1");
                     
@@ -193,6 +193,7 @@ namespace JobRelatorioChamados.Business
 
                         tabelaRelatorio.Observacao = relatorio.Observacoes;
                         tabelaRelatorio.Acoes = relatorio.Acoes;
+                        tabelaRelatorio.Categoria = relatorio.Categoria;
                         listaTabela.Add(tabelaRelatorio);
                     }
                     ws.Cell(1, 11).SetValue<int>(diaSemana);
@@ -253,6 +254,7 @@ namespace JobRelatorioChamados.Business
 
                             tabelaRelatorio.Observacao = relatorio.Observacoes;
                             tabelaRelatorio.Acoes = relatorio.Acoes;
+                            tabelaRelatorio.Categoria = relatorio.Categoria;
                             relatorioPorto.Add(tabelaRelatorio);
 
                             ws.Cell(1, 11).SetValue<int>(diaSemana);

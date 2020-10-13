@@ -20,9 +20,9 @@ namespace JobRelatorioChamados.Business
                 MailMessage message = new MailMessage();
 
                 message.IsBodyHtml = true;
-                message.From = new MailAddress("guilherme.santos@confitec.com.br", "Guilherme Santos");
+                message.From = new MailAddress("willian.silva@confitec.com.br", "Willian Silva");
                 message.Subject = String.Concat("iRisk - Report de chamados - Brasilseg e Porto - ", DateTime.Today.ToString("dd/MM"));
-                message.To.Add(new MailAddress("guilherme.santos@confitec.com.br"));
+                message.To.Add(new MailAddress("willian.silva@confitec.com.br"));
 
                 //cor header porto #5B9BD5
                 //cor header brasilseg #FFD966
@@ -325,6 +325,10 @@ namespace JobRelatorioChamados.Business
                                       style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt'>
                                       <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>" + registro.Acoes + @"<o:p></o:p></span></p>
                                   </td>
+                                  <td 
+                                      style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt'>
+                                      <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>" + registro.Categoria + @"<o:p></o:p></span></p>
+                                  </td>
                                   </tr>";
                         linhasBrasilSeg = String.Concat(validaViolacaoLinha, linhasBrasilSeg);
                         tabelaRelatorioBrasilseg = String.Concat(tabelaRelatorioBrasilseg, linhasBrasilSeg);
@@ -383,6 +387,10 @@ namespace JobRelatorioChamados.Business
                                       style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt'>
                                       <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>" + registro.Acoes + @"<o:p></o:p></span></p>
                                   </td>
+                                  <td 
+                                      style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt'>
+                                      <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>" + registro.Categoria + @"<o:p></o:p></span></p>
+                                  </td>
                                   </tr>";
                         linhasPorto = String.Concat(validaViolacaoLinha, linhasPorto);
                         tabelaRelatorioPorto = String.Concat(tabelaRelatorioPorto, linhasPorto);
@@ -404,7 +412,7 @@ namespace JobRelatorioChamados.Business
                     client.Port = 587;
                     client.DeliveryMethod = SmtpDeliveryMethod.Network;
                     client.UseDefaultCredentials = false;
-                    NetworkCredential credentials = new NetworkCredential("guilherme.santos@confitec.com.br", "Batata123");
+                    NetworkCredential credentials = new NetworkCredential("willian.silva@confitec.com.br", "Batata123");
                     client.EnableSsl = true;
                     client.Credentials = credentials;
                     client.Send(message);
