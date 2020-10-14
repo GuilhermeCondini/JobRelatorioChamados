@@ -9,7 +9,6 @@ namespace JobRelatorioChamados.Models
     {
         public string Id { get; set; }
         public string Status { get; set; }
-        public string SubStatus { get; set; }
         public string Titulo { get; set; }
         public string Prioridade { get; set; }
         public DateTime DataAbertura { get; set; }
@@ -18,7 +17,8 @@ namespace JobRelatorioChamados.Models
         public DateTime? DataViolacao { get; set; }
         public string Observacao { get; set; }
         public string Acoes { get; set; }
-        public string Categoria { get; set; }
+        public string StatusAtuacao { get; set; }
+        public string CategoriaErro { get; set; }
         public string Cliente { get; set; }
     }
 }

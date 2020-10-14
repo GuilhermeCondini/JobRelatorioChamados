@@ -172,7 +172,6 @@ namespace JobRelatorioChamados.Business
                         tabelaRelatorio.Cliente = "BrasilSeg";
                         tabelaRelatorio.Id = relatorio.Id;
                         tabelaRelatorio.Status = relatorio.Status;
-                        tabelaRelatorio.SubStatus = relatorio.SubStatus;
                         tabelaRelatorio.Titulo = relatorio.Titulo;
                         tabelaRelatorio.Prioridade = relatorio.Prioridade;
                         tabelaRelatorio.DataAbertura = Convert.ToDateTime(relatorio.Abertura);
@@ -193,7 +192,8 @@ namespace JobRelatorioChamados.Business
 
                         tabelaRelatorio.Observacao = relatorio.Observacoes;
                         tabelaRelatorio.Acoes = relatorio.Acoes;
-                        tabelaRelatorio.Categoria = relatorio.Categoria;
+                        tabelaRelatorio.CategoriaErro = relatorio.CategoriaErro;
+                        tabelaRelatorio.StatusAtuacao = relatorio.StatusAtuacao;
                         listaTabela.Add(tabelaRelatorio);
                     }
                     ws.Cell(1, 11).SetValue<int>(diaSemana);
@@ -233,7 +233,6 @@ namespace JobRelatorioChamados.Business
                             tabelaRelatorio.Cliente = "Porto";
                             tabelaRelatorio.Id = relatorio.Id;
                             tabelaRelatorio.Status = relatorio.Status;
-                            tabelaRelatorio.SubStatus = relatorio.SubStatus;
                             tabelaRelatorio.Titulo = relatorio.Titulo;
                             tabelaRelatorio.Prioridade = relatorio.Prioridade;
                             tabelaRelatorio.DataAbertura = Convert.ToDateTime(relatorio.Abertura);
@@ -254,7 +253,8 @@ namespace JobRelatorioChamados.Business
 
                             tabelaRelatorio.Observacao = relatorio.Observacoes;
                             tabelaRelatorio.Acoes = relatorio.Acoes;
-                            tabelaRelatorio.Categoria = relatorio.Categoria;
+                            tabelaRelatorio.CategoriaErro = relatorio.CategoriaErro;
+                            tabelaRelatorio.StatusAtuacao = relatorio.StatusAtuacao;
                             relatorioPorto.Add(tabelaRelatorio);
 
                             ws.Cell(1, 11).SetValue<int>(diaSemana);

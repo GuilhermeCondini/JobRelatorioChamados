@@ -141,10 +141,6 @@ namespace JobRelatorioChamados.Business
                           </td>
                           <td nowrap
                               style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 3.5pt 0cm 3.5pt'>
-                              <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>Sub-Status<o:p></o:p></span></p>
-                          </td>
-                          <td nowrap
-                              style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 3.5pt 0cm 3.5pt'>
                               <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>Título<o:p></o:p></span></p>
                           </td>
                           <td nowrap
@@ -174,12 +170,22 @@ namespace JobRelatorioChamados.Business
                           </td>
                           <td nowrap
                               style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 3.5pt 0cm 3.5pt'>
-                              <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>Observações<o:p></o:p>
+                              <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>Status Atuação<o:p></o:p>
+                                      </span></p>
+                          </td>
+                          <td nowrap
+                              style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 3.5pt 0cm 3.5pt'>
+                              <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>Categoria Erro<o:p></o:p>
                                       </span></p>
                           </td>
                           <td nowrap
                               style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 3.5pt 0cm 3.5pt'>
                               <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>Ações<o:p></o:p>
+                                      </span></p>
+                          </td>
+                          <td nowrap
+                              style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 3.5pt 0cm 3.5pt'>
+                              <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>Observações<o:p></o:p>
                                       </span></p>
                           </td>
                       </tr>";
@@ -205,10 +211,6 @@ namespace JobRelatorioChamados.Business
                           </td>
                           <td nowrap
                               style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 3.5pt 0cm 3.5pt'>
-                              <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>Sub-Status<o:p></o:p></span></p>
-                          </td>
-                          <td nowrap
-                              style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 3.5pt 0cm 3.5pt'>
                               <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>Título<o:p></o:p></span></p>
                           </td>
                           <td nowrap
@@ -238,12 +240,22 @@ namespace JobRelatorioChamados.Business
                           </td>
                           <td nowrap
                               style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 3.5pt 0cm 3.5pt'>
-                              <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>Observações<o:p></o:p>
+                              <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>Status Atuação<o:p></o:p>
+                                      </span></p>
+                          </td>
+                          <td nowrap
+                              style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 3.5pt 0cm 3.5pt'>
+                              <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>Categoria Erro<o:p></o:p>
                                       </span></p>
                           </td>
                           <td nowrap
                               style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 3.5pt 0cm 3.5pt'>
                               <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>Ações<o:p></o:p>
+                                      </span></p>
+                          </td>
+                          <td nowrap
+                              style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 3.5pt 0cm 3.5pt'>
+                              <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>Observações<o:p></o:p>
                                       </span></p>
                           </td>
                       </tr>";
@@ -285,11 +297,6 @@ namespace JobRelatorioChamados.Business
                                   </td>
                                   <td 
                                       style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt'>
-                                      <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>" + registro.SubStatus + @"<o:p></o:p>
-                                              </span></p>
-                                  </td>
-                                  <td 
-                                      style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt'>
                                       <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>" + registro.Titulo+@"<o:p>
                                               </o:p></span></p>
                                   </td>
@@ -319,7 +326,11 @@ namespace JobRelatorioChamados.Business
                                   </td>
                                   <td 
                                       style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt'>
-                                      <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>"+registro.Observacao+ @"<o:p></o:p></span></p>
+                                      <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>"+registro.StatusAtuacao+ @"<o:p></o:p></span></p>
+                                  </td>
+                                  <td 
+                                      style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt'>
+                                      <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>" + registro.CategoriaErro + @"<o:p></o:p></span></p>
                                   </td>
                                   <td 
                                       style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt'>
@@ -327,7 +338,8 @@ namespace JobRelatorioChamados.Business
                                   </td>
                                   <td 
                                       style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt'>
-                                      <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>" + registro.Categoria + @"<o:p></o:p></span></p>
+                                      <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>" + registro.Observacao + @"<o:p></o:p>
+                                              </span></p>
                                   </td>
                                   </tr>";
                         linhasBrasilSeg = String.Concat(validaViolacaoLinha, linhasBrasilSeg);
@@ -344,11 +356,6 @@ namespace JobRelatorioChamados.Business
                                   <td 
                                       style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt'>
                                       <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>" + registro.Status + @"<o:p></o:p>
-                                              </span></p>
-                                  </td>
-                                  <td 
-                                      style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt'>
-                                      <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>" + registro.SubStatus + @"<o:p></o:p>
                                               </span></p>
                                   </td>
                                   <td 
@@ -382,14 +389,19 @@ namespace JobRelatorioChamados.Business
                                   </td>
                                   <td 
                                       style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt'>
-                                      <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>" + registro.Observacao + @"<o:p></o:p></span></p>
+                                      <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>" + registro.StatusAtuacao + @"<o:p></o:p></span></p>
                                   </td>                                  <td 
+                                      style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt'>
+                                      <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>" + registro.CategoriaErro + @"<o:p></o:p></span></p>
+                                  </td>
+                                  <td 
                                       style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt'>
                                       <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>" + registro.Acoes + @"<o:p></o:p></span></p>
                                   </td>
                                   <td 
                                       style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt'>
-                                      <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>" + registro.Categoria + @"<o:p></o:p></span></p>
+                                      <p class=MsoNormal><span style='color:black;mso-fareast-language:PT-BR'>" + registro.Observacao + @"<o:p></o:p>
+                                              </span></p>
                                   </td>
                                   </tr>";
                         linhasPorto = String.Concat(validaViolacaoLinha, linhasPorto);
